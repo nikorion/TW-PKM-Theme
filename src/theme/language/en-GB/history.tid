@@ -1,6 +1,5 @@
 title: $:/plugins/nikorion/theme/language/en-GB/history
 type: text/vnd.tiddlywiki
 
-* ''0.4.0'' -- 2026.10.11 -- The Nikorion palette now ships with the theme (the separate Palette plugin is merged here).
 * ''0.2.0'' -- 2026.10.11 -- Now a complete Vanilla-based theme (plugin type theme) to select with `$:/theme`; the palette moves to the TW-Palette plugin.
 * ''0.1.0'' -- 2026.10.11 -- Hello! Stylesheets and shadow-tiddler overrides gathered from the author's production wiki into one plugin, loaded after the core and all other plugins (`plugin-priority` 100).

@@ -1,9 +1,9 @@
 {
   "title": "$:/plugins/nikorion/theme",
   "name": "Theme",
-  "description": "nikorion's theme on top of Vanilla, with its own palette: stylesheets, Vanilla setting overrides, colour palette and overrides of third-party plugin styles",
+  "description": "nikorion's theme on top of Vanilla: stylesheets, Vanilla setting overrides and overrides of third-party plugin styles",
   "author": "nikorion",
-  "version": "0.4.0",
+  "version": "0.3.0",
   "core-version": ">=5.3.5",
   "plugin-priority": "100",
   "list": "readme license history",

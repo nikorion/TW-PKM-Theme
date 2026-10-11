@@ -17,4 +17,3 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 * `$:/nikorion/styles/highlight.css` is the //Obsidian// theme of [[highlight.js|https://highlightjs.org/]] ported by Alexander Marenin (BSD 3-Clause), with one personal addition (punctuation colour).
 * The files of `overrides/` are modified copies of tiddlers of [[Kookma|https://github.com/kookma]] plugins (Refnotes, Shiraz Formatter; MIT) and of the TiddlyWiki core (BSD 3-Clause, Copyright (©) Jeremy Ruston).
-* `palette.tid` is a modified copy of the default palette of TiddlyWiki (BSD 3-Clause, Copyright (©) Jeremy Ruston).
