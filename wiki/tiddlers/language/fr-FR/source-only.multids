@@ -1,0 +1,6 @@
+title: $:/nikorion/language/fr-FR/SourceOnly/
+
+Title: ! Modifier le thème uniquement depuis sa source
+Rule: ''Ne changez jamais le visuel depuis l'interface web'' (réglages du thème, choix de palette, édition d'une feuille de style ou d'un tiddler de réglage ici) : modifiez plutôt les fichiers du plugin.
+Why: Tout le visuel vit dans les sources du plugin sous forme de shadow tiddlers. Une modification faite dans le navigateur crée un tiddler ordinaire qui masque le shadow du plugin : il ne fait pas partie du plugin, il est filtré des sauvegardes sur disque (`$:/config/SyncFilter`) et il est perdu ou devient une divergence cachée.
+Where: Feuilles de style : `src/theme/styles/` · surcharges du cœur, de Vanilla et des plugins tiers : `src/theme/overrides/` (réglages Vanilla dans `vanilla.multids`) · images : `src/theme/images/`. Avec `pnpm dev`, enregistrer un fichier l'applique à chaud.

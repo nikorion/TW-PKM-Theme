@@ -1,0 +1,6 @@
+title: $:/nikorion/language/en-GB/SourceOnly/
+
+Title: ! Edit the theme from its source only
+Rule: ''Never change the look from the web interface'' (Theme tweaks, palette picker, editing a stylesheet or a setting tiddler here): change the files of the plugin instead.
+Why: The whole look lives in the plugin sources as shadow tiddlers. A change made in the browser creates an ordinary tiddler that masks the shadow of the plugin: it is not part of the plugin, is filtered out of the saves to disk (`$:/config/SyncFilter`) and is lost or becomes a hidden divergence.
+Where: Stylesheets: `src/theme/styles/` · overrides of core, Vanilla and third-party plugins: `src/theme/overrides/` (Vanilla settings in `vanilla.multids`) · images: `src/theme/images/`. With `pnpm dev`, saving a file applies it live.
