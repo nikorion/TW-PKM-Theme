@@ -5,7 +5,7 @@ Un thème TiddlyWiki basé sur Vanilla, avec un habillage personnel : les feuill
 
 ! Ce que c'est
 
-Un thème complet (type de plugin //theme//). Sélectionnez-le dans //Panneau de contrôle → Apparence → Thème//, ou en réglant `$:/theme` sur `$:/plugins/nikorion/theme`. Il porte les feuilles de style et les réglages de Vanilla (`vanilla/`, copiés de TiddlyWiki et ajustés), puis les feuilles et surcharges de l'auteur par-dessus. Les couleurs viennent de la palette (voir le plugin Palette). Le layout n'est pas fourni : utilisez n'importe quel layout (Layout par exemple).
+Un thème complet (type de plugin //theme//). Le plugin Palette le sélectionne (`$:/theme`) ; sinon sélectionnez-le dans //Panneau de contrôle → Apparence → Thème//. Il porte les feuilles de style et les réglages de Vanilla (`vanilla/`, copiés de TiddlyWiki et ajustés), puis les feuilles et surcharges de l'auteur par-dessus. Les couleurs viennent de la palette (voir le plugin Palette). Le layout n'est pas fourni : utilisez n'importe quel layout (Layout par exemple).
 
 ! Ce qu'il change
 

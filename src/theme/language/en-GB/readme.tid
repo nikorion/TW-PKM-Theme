@@ -5,7 +5,7 @@ A Vanilla-based TiddlyWiki theme with a personal look: the author's stylesheets 
 
 ! What it is
 
-A complete theme (plugin type //theme//). Select it in //Control Panel → Appearance → Theme//, or by setting `$:/theme` to `$:/plugins/nikorion/theme`. It carries Vanilla's stylesheets and settings (`vanilla/`, copied from TiddlyWiki and adjusted), then the author's stylesheets and overrides on top. Colours come from the palette (see the Palette plugin). The layout is not provided: use any layout (Layout for instance).
+A complete theme (plugin type //theme//). The Palette plugin selects it (`$:/theme`); otherwise select it in //Control Panel → Appearance → Theme//. It carries Vanilla's stylesheets and settings (`vanilla/`, copied from TiddlyWiki and adjusted), then the author's stylesheets and overrides on top. Colours come from the palette (see the Palette plugin). The layout is not provided: use any layout (Layout for instance).
 
 ! What it changes
 
