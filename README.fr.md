@@ -9,7 +9,8 @@ Un thème TiddlyWiki basé sur Vanilla (type de plugin theme) avec l'habillage p
 
 ## Vue d'ensemble
 
-- `src/theme/vanilla/` : feuilles de style et réglages de Vanilla, copiés de TiddlyWiki et ajustés (le thème se suffit à lui-même).
+- `dependents` de `plugin.info` : Vanilla reste chargé ; rien n'en est copié.
+- `src/theme/overrides/vanilla-settings.multids` : les valeurs de l'auteur des réglages de Vanilla.
 - `src/theme/styles/` : six feuilles de style (texte courant, titres, filets, coloration du code, cadres, blocs colorés), qui gardent leurs titres d'origine `$:/nikorion/styles/*`.
 - `src/theme/overrides/` : tiddlers qui portent le titre d'un shadow tiddler du cœur, du thème Vanilla ou d'un plugin tiers, et le remplacent donc.
 - `plugin-priority` 100 : le plugin s'enregistre après le cœur (0), les thèmes et tous les plugins ordinaires (1), donc ses shadows l'emportent toujours.

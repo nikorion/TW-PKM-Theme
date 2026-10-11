@@ -1,13 +1,14 @@
 {
   "title": "$:/plugins/nikorion/theme",
   "name": "Theme",
-  "description": "nikorion's Vanilla-based theme: Vanilla's stylesheets and settings with the author's look, and overrides of third-party plugin styles",
+  "description": "nikorion's theme on top of Vanilla: stylesheets, Vanilla setting overrides and overrides of third-party plugin styles",
   "author": "nikorion",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "core-version": ">=5.3.5",
   "plugin-priority": "100",
   "list": "readme license history",
   "source": "https://github.com/nikorion/TW-Theme",
   "type": "application/json",
-  "plugin-type": "theme"
+  "plugin-type": "theme",
+  "dependents": "$:/themes/tiddlywiki/vanilla"
 }

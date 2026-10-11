@@ -13,7 +13,9 @@
         "nikorion/font-manager",
         "nikorion/detect-language"
     ],
-    "themes": [],
+    "themes": [
+        "tiddlywiki/vanilla"
+    ],
     "languages": [
         "fr-FR"
     ],

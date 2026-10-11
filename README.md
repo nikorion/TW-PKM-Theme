@@ -9,7 +9,8 @@ A Vanilla-based TiddlyWiki theme (plugin type theme) with the author's personal 
 
 ## Overview
 
-- `src/theme/vanilla/`: Vanilla's stylesheets and settings, copied from TiddlyWiki and adjusted (the theme is self-sufficient).
+- `plugin.info` `dependents`: Vanilla stays loaded; nothing of it is copied.
+- `src/theme/overrides/vanilla-settings.multids`: the author's values of Vanilla's settings.
 - `src/theme/styles/`: six stylesheets (body text, headings, rules, code highlighting, frames, coloured blocks), keeping their original `$:/nikorion/styles/*` titles.
 - `src/theme/overrides/`: tiddlers that share the title of a shadow tiddler of the core, the Vanilla theme or a third-party plugin, and so replace it.
 - `plugin-priority` 100: the plugin registers after the core (0), the themes and all ordinary plugins (1), so its shadows always win.
