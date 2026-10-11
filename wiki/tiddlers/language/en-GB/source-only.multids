@@ -1,6 +1,6 @@
 title: $:/nikorion/language/en-GB/SourceOnly/
 
-Title: ! Browser edits go to the source
-Rule: ''You can edit the look from the web interface of this dev wiki'' (Theme tweaks, a stylesheet or a setting tiddler of the plugin): the change is written back into the plugin sources and the file is removed from `wiki/tiddlers/`.
-Why: With `pnpm dev`, the dev server notices the file the browser just saved, finds the tiddler by title in `src/theme/` (a `.tid` file, or a line of `overrides/vanilla.multids`), updates it, then deletes the saved copy so the plugin's shadow tiddler takes over again. Nothing stays in the wiki.
-Where: Written back: stylesheets (`src/theme/styles/`), overrides (`src/theme/overrides/`), Vanilla settings (a new one is appended to `vanilla.multids`). Left alone: tiddlers unknown to the plugin, multi-line values for `vanilla.multids`, and `$:/palette`, `$:/view`, `AnimationDuration` (never saved in this wiki).
+Title: ! Everything you edit or create here becomes the theme
+Rule: ''In this dev wiki, whatever you create or modify from the web interface is part of the plugin.'' It is written into `src/theme/` and removed from `wiki/tiddlers/`: you build the theme directly in the browser.
+Why: The dev server watches what the browser saves. A tiddler the plugin already ships updates its source file (a `.tid`, or a line of `overrides/vanilla.multids`). A new one is created in the plugin: a stylesheet in `styles/`, a new Vanilla setting in `vanilla.multids`, an image in `images/`, anything else (palette, view, settings, notes…) in `overrides/`. Only works while `pnpm dev` runs.
+Where: Never taken: drafts, session state, and the tiddlers that were already files of this wiki when the server started (this one, Playground, site title…): their edits stay in the wiki. Check `git status` in the plugin after a session: new files in `styles/` and `overrides/` are what you created.
