@@ -1,7 +1,11 @@
 title: $:/plugins/nikorion/theme/language/en-GB/readme
 type: text/vnd.tiddlywiki
 
-A personal look for a TiddlyWiki: the author's stylesheets and the overrides of third-party shadow tiddlers (Vanilla theme settings, Kookma plugins, core custom properties), gathered in one plugin instead of being scattered as loose tiddlers of the wiki.
+A Vanilla-based TiddlyWiki theme with a personal look: the author's stylesheets and the overrides of third-party shadow tiddlers (Vanilla theme settings, Kookma plugins, core custom properties), gathered in one plugin instead of being scattered as loose tiddlers of the wiki.
+
+! What it is
+
+A complete theme (plugin type //theme//). Select it in //Control Panel → Appearance → Theme//, or by setting `$:/theme` to `$:/plugins/nikorion/theme`. It carries Vanilla's stylesheets and settings (`vanilla/`, copied from TiddlyWiki and adjusted), then the author's stylesheets and overrides on top. Colours come from the palette (see the Palette plugin). The layout is not provided: use any layout (Layout for instance).
 
 ! What it changes
 

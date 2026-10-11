@@ -1,7 +1,11 @@
 title: $:/plugins/nikorion/theme/language/fr-FR/readme
 type: text/vnd.tiddlywiki
 
-Un habillage personnel pour TiddlyWiki : les feuilles de style de l'auteur et les surcharges de shadow tiddlers tiers (réglages du thème Vanilla, plugins Kookma, propriétés CSS du cœur), réunies dans un seul plugin plutôt qu'éparpillées en tiddlers libres du wiki.
+Un thème TiddlyWiki basé sur Vanilla, avec un habillage personnel : les feuilles de style de l'auteur et les surcharges de shadow tiddlers tiers (réglages du thème Vanilla, plugins Kookma, propriétés CSS du cœur), réunies dans un seul plugin plutôt qu'éparpillées en tiddlers libres du wiki.
+
+! Ce que c'est
+
+Un thème complet (type de plugin //theme//). Sélectionnez-le dans //Panneau de contrôle → Apparence → Thème//, ou en réglant `$:/theme` sur `$:/plugins/nikorion/theme`. Il porte les feuilles de style et les réglages de Vanilla (`vanilla/`, copiés de TiddlyWiki et ajustés), puis les feuilles et surcharges de l'auteur par-dessus. Les couleurs viennent de la palette (voir le plugin Palette). Le layout n'est pas fourni : utilisez n'importe quel layout (Layout par exemple).
 
 ! Ce qu'il change
 

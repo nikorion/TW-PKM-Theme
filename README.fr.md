@@ -5,10 +5,11 @@
 ![Status](https://img.shields.io/badge/status-personal-orange)
 ![TiddlyWiki](https://img.shields.io/badge/TiddlyWiki-%E2%89%A55.3.5-blue)
 
-Un plugin TiddlyWiki qui réunit l'habillage personnel de l'auteur : feuilles de style et surcharges de shadow tiddlers (réglages du thème Vanilla, styles des plugins Kookma, propriétés CSS du cœur) qui étaient auparavant des tiddlers libres du wiki de production.
+Un thème TiddlyWiki basé sur Vanilla (type de plugin theme) avec l'habillage personnel de l'auteur : feuilles de style et réglages de Vanilla, feuilles de l'auteur, et surcharges de shadow tiddlers (styles des plugins Kookma, propriétés CSS du cœur) qui étaient auparavant des tiddlers libres du wiki de production. Les couleurs viennent du plugin compagnon TW-Palette ; le layout reste celui de Layout.
 
 ## Vue d'ensemble
 
+- `src/theme/vanilla/` : feuilles de style et réglages de Vanilla, copiés de TiddlyWiki et ajustés (le thème se suffit à lui-même).
 - `src/theme/styles/` : six feuilles de style (texte courant, titres, filets, coloration du code, cadres, blocs colorés), qui gardent leurs titres d'origine `$:/nikorion/styles/*`.
 - `src/theme/overrides/` : tiddlers qui portent le titre d'un shadow tiddler du cœur, du thème Vanilla ou d'un plugin tiers, et le remplacent donc.
 - `plugin-priority` 100 : le plugin s'enregistre après le cœur (0), les thèmes et tous les plugins ordinaires (1), donc ses shadows l'emportent toujours.

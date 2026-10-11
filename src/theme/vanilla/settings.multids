@@ -1,0 +1,8 @@
+title: $:/themes/tiddlywiki/vanilla/settings/
+
+fontfamily: "Inter"
+codefontfamily: "JetBrains Mono"
+backgroundimageattachment: fixed
+backgroundimagesize: cover
+backgroundimage: $:/plugins/nikorion/theme/images/vecteezy-summer-landscape-fields.svg
+editorfontfamily: "JetBrains Mono"

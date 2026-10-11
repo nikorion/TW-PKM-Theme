@@ -1,0 +1,13 @@
+title: $:/themes/tiddlywiki/vanilla/metrics/
+
+bodyfontsize: 16px
+bodylineheight: 25px
+fontsize: 16px
+lineheight: 25px
+storyleft: 0px
+storytop: 0px
+storyright: 770px
+storywidth: 770px
+tiddlerwidth: 686px
+sidebarbreakpoint: 960px
+sidebarwidth: 460px

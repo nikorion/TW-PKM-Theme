@@ -5,10 +5,11 @@
 ![Status](https://img.shields.io/badge/status-personal-orange)
 ![TiddlyWiki](https://img.shields.io/badge/TiddlyWiki-%E2%89%A55.3.5-blue)
 
-A TiddlyWiki plugin gathering the author's personal look: stylesheets, and the overrides of shadow tiddlers (Vanilla theme settings, Kookma plugin styles, core custom properties) that used to be loose tiddlers of the production wiki.
+A Vanilla-based TiddlyWiki theme (plugin type theme) with the author's personal look: Vanilla's stylesheets and settings, the author's stylesheets, and the overrides of shadow tiddlers (Kookma plugin styles, core custom properties) that used to be loose tiddlers of the production wiki. Colours come from the companion TW-Palette plugin; the layout stays with Layout.
 
 ## Overview
 
+- `src/theme/vanilla/`: Vanilla's stylesheets and settings, copied from TiddlyWiki and adjusted (the theme is self-sufficient).
 - `src/theme/styles/`: six stylesheets (body text, headings, rules, code highlighting, frames, coloured blocks), keeping their original `$:/nikorion/styles/*` titles.
 - `src/theme/overrides/`: tiddlers that share the title of a shadow tiddler of the core, the Vanilla theme or a third-party plugin, and so replace it.
 - `plugin-priority` 100: the plugin registers after the core (0), the themes and all ordinary plugins (1), so its shadows always win.
