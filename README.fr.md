@@ -17,7 +17,7 @@ Un plugin TiddlyWiki qui réunit l'habillage personnel de l'auteur : feuilles de
 
 Plugin personnel, non publié. Reliez `src/theme` comme `nikorion/theme` dans `TIDDLYWIKI_PLUGIN_PATH` et listez `"nikorion/theme"` dans les `plugins` du `tiddlywiki.info` du wiki.
 
-Nécessite TiddlyWiki ≥ 5.3.5, les polices Inter, Palatino Linotype et JetBrains Mono sur la machine, et `files/logo-goat-mech.svg` dans le dossier du wiki pour les filets.
+Nécessite TiddlyWiki ≥ 5.3.5 et les polices Inter, Palatino Linotype et JetBrains Mono sur la machine.
 
 ## Développement
 
@@ -35,6 +35,7 @@ Les sources sont dans `src/theme/` ; le wiki de dev (`wiki/`) montre chaque part
 |---|---|
 | `src/theme/plugin.info` | Métadonnées du plugin, `plugin-priority` |
 | `src/theme/styles/*.tid` | Feuilles de style taguées `$:/tags/Stylesheet` |
+| `src/theme/images/` | Logo du filet horizontal (inliné en data URI) |
 | `src/theme/overrides/*` | Surcharges de shadow tiddlers (titre imposé par le tiddler surchargé) |
 
 ## Licence

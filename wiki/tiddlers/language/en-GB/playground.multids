@@ -4,6 +4,6 @@ Title: ! Theme playground
 Headings: Heading 1
 H2: Heading 2
 H3: Heading 3
-Body: Body text in Inter, with a horizontal rule below (central logo if the wiki serves `/files/logo-goat-mech.svg`).
+Body: Body text in Inter, with a horizontal rule below (with the goat logo in the middle).
 Blocks: ! Coloured blocks
 Code: ! Code highlighting

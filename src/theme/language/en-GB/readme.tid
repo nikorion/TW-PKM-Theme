@@ -8,7 +8,7 @@ A personal look for a TiddlyWiki: the author's stylesheets and the overrides of 
 |!Part |!Tiddlers |
 |Body text |`$:/nikorion/styles/body-text.css`: foreground and background colours, Inter font, no ligatures in code |
 |Headings |`$:/nikorion/styles/headings.css`: Palatino headings with rules, site title |
-|Rules |`$:/nikorion/styles/hr.css`: `<hr>` with a central logo (reads `/files/logo-goat-mech.svg` of the wiki) |
+|Rules |`$:/nikorion/styles/hr.css`: `<hr>` with a central logo (logo shipped with the plugin) |
 |Code highlighting |`$:/nikorion/styles/highlight.css`: Obsidian colours for highlight.js |
 |Frames |`$:/nikorion/styles/layoutVanilla.css`: tiddler frame and sidebar borders |
 |Coloured blocks |`$:/nikorion/styles/infobox.css`: `info0`, `interro0`, `alert0` classes |
@@ -23,4 +23,3 @@ The plugin declares `plugin-priority` 100. TiddlyWiki registers the shadow tiddl
 
 * TiddlyWiki >= 5.3.5.
 * The fonts //Inter//, //Palatino Linotype// and //JetBrains Mono// are not shipped: install them on the machine or with the Font Manager plugin.
-* The horizontal rule needs the file `files/logo-goat-mech.svg` in the wiki folder (served at `/files/`).

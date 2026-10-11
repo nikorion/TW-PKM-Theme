@@ -17,7 +17,7 @@ A TiddlyWiki plugin gathering the author's personal look: stylesheets, and the o
 
 Personal plugin, not published. Link `src/theme` as `nikorion/theme` in `TIDDLYWIKI_PLUGIN_PATH` and list `"nikorion/theme"` in the `plugins` of the wiki's `tiddlywiki.info`.
 
-Requires TiddlyWiki ≥ 5.3.5, the fonts Inter, Palatino Linotype and JetBrains Mono on the machine, and `files/logo-goat-mech.svg` in the wiki folder for the rules.
+Requires TiddlyWiki ≥ 5.3.5 and the fonts Inter, Palatino Linotype and JetBrains Mono on the machine.
 
 ## Development
 
@@ -35,6 +35,7 @@ Sources are in `src/theme/`; the dev wiki (`wiki/`) shows every part in its Play
 |---|---|
 | `src/theme/plugin.info` | Plugin metadata, `plugin-priority` |
 | `src/theme/styles/*.tid` | Stylesheets tagged `$:/tags/Stylesheet` |
+| `src/theme/images/` | Logo used by the horizontal rule (inlined as a data URI) |
 | `src/theme/overrides/*` | Shadow-tiddler overrides (title imposed by the overridden tiddler) |
 
 ## License

@@ -10,9 +10,12 @@ Plugin TiddlyWiki (`$:/plugins/nikorion/theme`, créé 2026-10-11) : le visuel p
 - **Titres des feuilles de style `$:/nikorion/styles/*.css` conservés** (pas `$:/plugins/nikorion/theme/styles/…`) : l'ordre de cascade CSS suit l'ordre alphabétique des titres `$:/tags/Stylesheet` ; renommer changerait quel style gagne face aux plugins Kookma. Exception assumée à « titre = chemin fichier ».
 - `overrides/` : titres imposés par les tiddlers surchargés (core, Vanilla, Kookma). `core-custom-properties.tid` est une copie modifiée du cœur : **à comparer avec la version du cœur à chaque montée de TiddlyWiki**.
 - Aucun JS, pas de `pnpm lint`.
+- **Exception à la convention des wikis de dev (choix utilisateur 2026-10-11)** : `wiki/tiddlers/system/` ne contient **ni palette, ni `AnimationDuration`, ni `$:/view`, ni réglage Vanilla** (metrics/options/settings) — tout le visuel vient de `src/theme/`, le wiki de dev charge son propre plugin. Ne pas y recréer ces tiddlers ni les y copier : `TW-Theme` est dans `exclude` de `tw-dev/prefs.json` (la synchro des préférences d'interface ne lui en donne ni n'en prend). Un réglage visuel à changer se fait dans `src/theme/overrides/vanilla.multids`.
+- **`$:/config/SyncFilter` du wiki de dev étendu** : en plus de `$:/plugins/nikorion/`, il exclut tout ce que le plugin porte sous un autre titre (`$:/nikorion/styles/`, `custom-properties`, `$:/plugins/kookma/`, `$:/themes/tiddlywiki/vanilla/`) + `$:/palette`, `$:/view`, `AnimationDuration`. Sans ça le HMR pousse la feuille au navigateur, dont le syncer la réécrit dans `wiki/tiddlers/system/` (vécu 2026-10-11, `$__nikorion_styles_hr.css.tid`), et ce vrai tiddler masque le shadow du plugin pour de bon. Tout nouveau titre ajouté au plugin hors `$:/plugins/nikorion/theme/` → l'ajouter à ce filtre.
+- Le fond (`settings/backgroundimage` = `vecteezy-summer-landscape-fields.svg`, 1,3 Mo) reste un tiddler de kms-prod, non livré dans le plugin.
 
 ## Dépendances hors plugin
-- `hr.css` lit `/files/logo-goat-mech.svg` : fichier du dossier `files/` du wiki (non livré).
+- Aucun fichier externe : le logo du filet est le tiddler `images/logo-goat-mech.svg` du plugin, inliné en data URI par `hr.tid` (macro `datauri` ; feuille wikitext donc `ules only …`).
 - Polices Inter, Palatino Linotype, JetBrains Mono : installées sur la machine (ou Font Manager).
 - `settings/backgroundimage` désigne un tiddler du wiki (`vecteezy-summer-landscape-fields.svg`).
 
@@ -24,6 +27,7 @@ src/theme/
   settings.tid                              ← placeholder "Coming soon."
   language/{lingo.tid, en-GB|fr-FR/…}
   styles/*.tid       ← 6 feuilles (type text/css, taguées $:/tags/Stylesheet)
+  images/logo-goat-mech.svg(.meta) ← logo du filet, inliné par hr.tid
   overrides/         ← surcharges de shadows : core custom-properties, refnotes footnote-counter,
                        tweaks headings (vidé), shiraz-formatter highlight-colors, vanilla.multids
 wiki/                ← wiki de dev : Playground (titres, blocs, code, filet)

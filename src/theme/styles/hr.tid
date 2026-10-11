@@ -2,17 +2,18 @@ created: 20260718050121463
 modified: 20260822112448024
 tags: $:/tags/Stylesheet
 title: $:/nikorion/styles/hr.css
-type: text/css
+type: text/vnd.tiddlywiki
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
 
 :root {
 	--nk-foreground: var(--tpc-foreground)/*#1A1A1A*/;
 }
 
-/* Goat icon: the SVG is the file files/logo-goat-mech.svg of the wiki (served
-   at /files/ by the TW server). Pure text/css, no wikitext. Editing the icon
-   means editing that file; the plugin does not ship it. */
+/* Goat icon: the SVG is a tiddler of this plugin, inlined as a data URI
+   (no file served by the wiki, works the same in a single-file wiki). */
 :root {
-	--logo-goat-mech: url("/files/logo-goat-mech.svg");
+	--logo-goat-mech: url(<<datauri "$:/plugins/nikorion/theme/images/logo-goat-mech.svg">>);
 }
 
 
