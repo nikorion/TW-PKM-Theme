@@ -12,3 +12,5 @@ type: text/vnd.tiddlywiki
 <<detect-language-lingo "SourceOnly/Why" mode="block">>
 
 <<detect-language-lingo "SourceOnly/Where" mode="block">>
+
+<<detect-language-lingo "SourceOnly/Manual" mode="block">>
