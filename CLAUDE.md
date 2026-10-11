@@ -12,12 +12,15 @@ Thème TiddlyWiki (`$:/plugins/nikorion/theme`, `"plugin-type": "theme"`, créé
 - **Titres des feuilles de style `$:/nikorion/styles/*.css` conservés** (pas `$:/plugins/nikorion/theme/styles/…`) : l'ordre de cascade CSS suit l'ordre alphabétique des titres `$:/tags/Stylesheet` ; renommer changerait quel style gagne face aux plugins Kookma. Exception assumée à « titre = chemin fichier ».
 - `overrides/` : titres imposés par les tiddlers surchargés (core, Vanilla, Kookma). `core-custom-properties.tid` est une copie modifiée du cœur : **à comparer avec la version du cœur à chaque montée de TiddlyWiki**.
 - Aucun JS, pas de `pnpm lint`.
-- **Exception à la convention des wikis de dev (choix utilisateur 2026-10-11)** : `wiki/tiddlers/system/` ne contient **ni palette, ni `AnimationDuration`, ni `$:/view`, ni réglage Vanilla** (metrics/options/settings) — tout le visuel vient de `src/theme/`, le wiki de dev charge son propre plugin. Ne pas y recréer ces tiddlers ni les y copier : `TW-Theme` est dans `exclude` de `tw-dev/prefs.json` (la synchro des préférences d'interface ne lui en donne ni n'en prend). Un réglage visuel à changer se fait dans `src/theme/overrides/vanilla.multids`.
+- **Exception à la convention des wikis de dev (choix utilisateur 2026-10-11)** : `wiki/tiddlers/system/` ne contient **ni palette, ni `AnimationDuration`, ni `$:/view`, ni réglage Vanilla** (metrics/options/settings) — tout le visuel vient de `src/theme/`, le wiki de dev charge son propre plugin. Ne pas y recréer ces tiddlers ni les y copier : `TW-Theme` est dans `exclude` de `tw-dev/prefs.json` (la synchro des préférences d'interface ne lui en donne ni n'en prend). Un réglage visuel à changer se fait dans `src/theme/vanilla/{metrics,options,settings}.multids`.
 - **Write-back navigateur → source, généralisé** (2026-10-11, `"twDev": {"writeBack": {"dirs": ["src/theme", "../TW-Palette/src/palette"], "default": "src/theme"}}`, `tw-dev/writeback.cjs` appelé depuis `dev-hmr.cjs`) : **dans ce wiki de dev, tout ce qui est créé ou modifié dans l'UI est du thème** (choix utilisateur). Titre déjà livré (thème, ou palette `$:/palettes/nikorion` → TW-Palette) → son fichier source mis à jour ; titre nouveau → `styles/` (feuille), `images/` (binaire), `overrides/<slug>.tid` (reste) ; puis le fichier enregistré est supprimé de `wiki/tiddlers/`. Jamais pris : brouillons, états de session, et les tiddlers déjà fichiers de `wiki/tiddlers/` au démarrage du serveur. Ne **pas** créer de fichier à la main dans `wiki/tiddlers/` pendant `pnpm dev` ; relire `git status` du thème **et** de TW-Palette après une session. Ne marche que pendant `pnpm dev`. Tiddler d'avis affiché en premier : `Edits here become the theme`.
 - Le fond d'écran (`images/vecteezy-summer-landscape-fields.svg`, 1,3 Mo) est livré dans le plugin ; Vanilla l'inline en data URI dans la feuille de page (base.tid), ce qui alourdit le CSS de chaque page. Alternative si gênant : le servir par `_canonical_uri` (retour à un fichier externe).
 
+## Couleurs : dans la palette, pas ici
+(2026-10-11, choix utilisateur.) **Aucune couleur en dur dans les feuilles** : elles lisent les variables CSS `--tpc-<clé>` que `overrides/core-custom-properties.tid` émet pour chaque clé de la palette courante (Vanilla + `$:/palette`), jamais `<<colour>>`. Les couleurs propres au thème (`nk-site-title`, `nk-hljs-*`, `nk-info-*`, `nk-interro-*`, `nk-alert-*`, `nk-light-*`, `nk-tiddler-border`, `nk-footnote-counter`, `nk-background`) sont des clés de la palette Nikorion (`TW-Palette/src/palette/palette.tid`) : **ce thème exige le plugin `palette`** ; avec une autre palette ces variables sont indéfinies (déclarations ignorées, pas de repli). Une nouvelle couleur = une clé `nk-…` dans la palette + `var(--tpc-nk-…)` ici.
+
 ## Dépendances hors plugin
-- Aucun fichier externe : le logo du filet est le tiddler `images/logo-goat-mech.svg` du plugin, inliné en data URI par `hr.tid` (macro `datauri` ; feuille wikitext donc `ules only …`).
+- Aucun fichier externe : le logo du filet est le tiddler `images/logo-goat-mech.svg` du plugin, inliné en data URI par `hr.tid` (macro `datauri` ; feuille wikitext donc ligne `\rules only …`).
 - Polices Inter, Palatino Linotype, JetBrains Mono : installées sur la machine (ou Font Manager).
 
 ## Structure
@@ -31,7 +34,7 @@ src/theme/
   styles/*.tid       ← 6 feuilles (type text/css, taguées $:/tags/Stylesheet)
   images/logo-goat-mech.svg(.meta) ← logo du filet, inliné par hr.tid
   overrides/         ← surcharges de shadows : core custom-properties, refnotes footnote-counter,
-                       tweaks headings (vidé), shiraz-formatter highlight-colors, vanilla.multids
+                       tweaks headings (vidé), shiraz-formatter highlight-colors
 wiki/                ← wiki de dev : Playground (titres, blocs, code, filet)
 ```
 

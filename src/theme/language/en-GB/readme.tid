@@ -25,5 +25,7 @@ The plugin declares `plugin-priority` 100. TiddlyWiki registers the shadow tiddl
 
 ! Requirements
 
+* The [[Palette|https://github.com/nikorion/TW-Palette]] plugin: the theme holds no colour, it reads the palette keys as CSS variables.
+
 * TiddlyWiki >= 5.3.5.
 * The fonts //Inter//, //Palatino Linotype// and //JetBrains Mono// are not shipped: install them on the machine or with the Font Manager plugin.
