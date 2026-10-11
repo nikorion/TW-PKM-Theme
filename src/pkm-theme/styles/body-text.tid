@@ -1,12 +1,12 @@
 created: 20260717013713816
 modified: 20260906220856827
 tags: $:/tags/Stylesheet
-title: $:/nikorion/styles/body-text.css
+title: $:/themes/nikorion/pkm/styles/body-text
 type: text/css
 
 /* Body text: foreground / background colours, font, ligatures. */
 
-/* --logo-goat-mech is defined by hr.tid ($:/nikorion/styles/hr.css), which
+/* --logo-goat-mech is defined by hr.tid ($:/themes/nikorion/pkm/styles/hr), which
    inlines the logo of the plugin as a data URI. Only consumed there. */
 
 :root {

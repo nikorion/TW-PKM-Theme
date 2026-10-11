@@ -1,4 +1,4 @@
-title: $:/plugins/nikorion/theme/language/fr-FR/license
+title: $:/themes/nikorion/pkm/language/fr-FR/license
 type: text/vnd.tiddlywiki
 
 Distribué sous licence MIT.
@@ -17,5 +17,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ! Composants tiers
 
-* `$:/nikorion/styles/highlight.css` est le thème //Obsidian// de [[highlight.js|https://highlightjs.org/]] porté par Alexander Marenin (BSD 3-Clause), avec un ajout personnel (couleur de la ponctuation).
+* `$:/themes/nikorion/pkm/styles/highlight` est le thème //Obsidian// de [[highlight.js|https://highlightjs.org/]] porté par Alexander Marenin (BSD 3-Clause), avec un ajout personnel (couleur de la ponctuation).
 * Les fichiers de `overrides/` sont des copies modifiées de tiddlers de plugins [[Kookma|https://github.com/kookma]] (Refnotes, Shiraz Formatter ; MIT) et du cœur de TiddlyWiki (BSD 3-Clause, Copyright (©) Jeremy Ruston).

@@ -1,0 +1,14 @@
+{
+  "title": "$:/themes/nikorion/pkm",
+  "name": "PKM",
+  "description": "Theme designed for the PKM plugin",
+  "author": "nikorion",
+  "version": "0.3.0",
+  "core-version": ">=5.3.5",
+  "plugin-priority": "100",
+  "list": "readme license history",
+  "source": "https://github.com/nikorion/TW-PKM-Theme",
+  "type": "application/json",
+  "plugin-type": "theme",
+  "dependents": "$:/themes/tiddlywiki/vanilla"
+}

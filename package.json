@@ -16,10 +16,10 @@
   "twDev": {
     "writeBack": {
       "dirs": [
-        "src/theme",
-        "../TW-Palette/src/palette"
+        "src/pkm-theme",
+        "../TW-PKM-Palette/src/palette"
       ],
-      "default": "src/theme"
+      "default": "src/pkm-theme"
     }
   }
 }

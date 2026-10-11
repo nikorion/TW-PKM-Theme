@@ -1,0 +1,32 @@
+title: $:/themes/nikorion/pkm/language/fr-FR/readme
+type: text/vnd.tiddlywiki
+
+Un thème TiddlyWiki basé sur Vanilla, avec un habillage personnel : les feuilles de style de l'auteur et les surcharges de shadow tiddlers tiers (réglages du thème Vanilla, plugins Kookma), réunies dans un seul plugin plutôt qu'éparpillées en tiddlers libres du wiki.
+
+! Ce que c'est
+
+Un thème complet (type de plugin //theme//). Le plugin PKM Palette le sélectionne (`$:/theme`) ; sinon sélectionnez-le dans //Panneau de contrôle → Apparence → Thème//. Il s'appuie sur Vanilla, qui reste chargé comme dépendance (rien n'est copié), et y ajoute par-dessus les valeurs de réglages, les feuilles et les surcharges de l'auteur. Les couleurs viennent de la palette (voir le plugin PKM Palette). Le layout n'est pas fourni : utilisez n'importe quel layout (Layout par exemple).
+
+! Ce qu'il change
+
+|!Partie |!Tiddlers |
+|Texte courant |`$:/themes/nikorion/pkm/styles/body-text` : couleurs de texte et de fond, police Inter, pas de ligatures dans le code |
+|Titres |`$:/themes/nikorion/pkm/styles/headings` : titres en Palatino avec filets, titre du site |
+|Filets |`$:/themes/nikorion/pkm/styles/hr` : `<hr>` avec un logo central (logo livré avec le plugin) |
+|Coloration du code |`$:/themes/nikorion/pkm/styles/highlight` : couleurs Obsidian pour highlight.js |
+|Cadres |`$:/themes/nikorion/pkm/styles/layout-vanilla` : bordures des tiddlers et de la barre latérale |
+|Blocs colorés |`$:/themes/nikorion/pkm/styles/infobox` : classes `info0`, `interro0`, `alert0` |
+|Réglages Vanilla |polices, tailles, largeur de la barre latérale, image de fond (livrée avec le plugin), titres collants |
+|Surcharges tierces |compteur de notes de Kookma Refnotes, titres de Kookma Tweaks (vidés), couleurs de surlignage de Shiraz Formatter |
+
+! Ordre de chargement
+
+Le plugin déclare `plugin-priority` 100. TiddlyWiki enregistre les shadow tiddlers des plugins par priorité croissante, le dernier l'emportant : le cœur a 0, les plugins et thèmes ordinaires 1, donc ce plugin les surcharge toujours, quel que soit leur ordre alphabétique.
+
+! Prérequis
+
+* Le thème Vanilla doit figurer dans les thèmes du wiki (c'est le cas par défaut).
+* Le plugin [[PKM Palette|https://github.com/nikorion/TW-PKM-Palette]] : le thème ne contient aucune couleur, il lit les clés de la palette comme variables CSS.
+
+* TiddlyWiki >= 5.3.5.
+* Les polices //Inter//, //Palatino Linotype// et //JetBrains Mono// ne sont pas fournies : installez-les sur la machine ou avec le plugin Font Manager.

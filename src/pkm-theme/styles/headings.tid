@@ -1,7 +1,7 @@
 created: 20260716104934733
 modified: 20260929183237955
 tags: $:/tags/Stylesheet
-title: $:/nikorion/styles/headings.css
+title: $:/themes/nikorion/pkm/styles/headings
 type: text/css
 
 /* Own heading styles, in place of the Kookma Tweaks ones (see
@@ -36,7 +36,7 @@ type: text/css
 .tc-titlebar.tc-edit-texteditor { }
 
 /* Body tiddler H1 */
-h1:not(.tc-control-panel *, .tc-site-title, .tc-titlebar .tc-title, .tc-titlebar.tc-edit-texteditor) {
+h1:not(.tc-control-panel *, .tc-plugin-info *, .tc-site-title, .tc-titlebar .tc-title, .tc-titlebar.tc-edit-texteditor) {
 	font-family: "Palatino Linotype";
 	font-variant-ligatures: discretionary-ligatures;
 	font-weight: normal;
@@ -71,7 +71,7 @@ h1:not(.tc-control-panel *, .tc-site-title, .tc-titlebar .tc-title, .tc-titlebar
 }
 
 /* Body tiddler H2 */
-h2:not(.tc-control-panel *, .tc-site-title, .tc-titlebar .tc-title, .tc-titlebar.tc-edit-texteditor) {
+h2:not(.tc-control-panel *, .tc-plugin-info *, .tc-site-title, .tc-titlebar .tc-title, .tc-titlebar.tc-edit-texteditor) {
 	font-family: "Palatino Linotype";
 	color: inherit;
 	padding-bottom: 0.12em;         /* keeps the descenders of g, p… from being clipped */
@@ -95,7 +95,7 @@ h2:not(.tc-control-panel *, .tc-site-title, .tc-titlebar .tc-title, .tc-titlebar
 }
 
 /* Body tiddler H3 */
-h3:not(.tc-control-panel *, .tc-site-title, .tc-titlebar .tc-title, .tc-titlebar.tc-edit-texteditor) {
+h3:not(.tc-control-panel *, .tc-plugin-info *, .tc-site-title, .tc-titlebar .tc-title, .tc-titlebar.tc-edit-texteditor) {
 	/*text-wrap: balance;*/
 	font-family : "Inter";
 	color: inherit;
@@ -103,4 +103,10 @@ h3:not(.tc-control-panel *, .tc-site-title, .tc-titlebar .tc-title, .tc-titlebar
 	line-height: 1.25;
 	font-size: 1.2rem;
 	font-weight:bold;
+}
+
+/* Plugin info item opened as a tiddler: the h1-h3 above skip it; keep its text in the
+   normal text colour instead of the link colour (the sidebar rule of Vanilla still wins there). */
+a.tc-tiddlylink.tc-plugin-info {
+	color: var(--tpc-foreground);
 }

@@ -3,13 +3,13 @@ creator: nikorion
 modified: 20260825110929097
 modifier: nikorion
 tags: $:/tags/Stylesheet
-title: $:/nikorion/styles/layoutVanilla.css
+title: $:/themes/nikorion/pkm/styles/layout-vanilla
 type: text/css
 
 :root {
 	--nk-light-background: var(--tpc-nk-light-background);
 	--nk-light-border: solid 1px var(--tpc-nk-light-border);
-	--nk-tiddler-border: double 3px var(--tpc-nk-tiddler-border);
+	--nk-tiddler-border: double 4px var(--tpc-nk-tiddler-border);
 }
 
 .tc-tiddler-frame {

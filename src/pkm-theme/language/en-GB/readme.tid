@@ -1,0 +1,32 @@
+title: $:/themes/nikorion/pkm/language/en-GB/readme
+type: text/vnd.tiddlywiki
+
+A Vanilla-based TiddlyWiki theme with a personal look: the author's stylesheets and the overrides of third-party shadow tiddlers (Vanilla theme settings, Kookma plugins), gathered in one plugin instead of being scattered as loose tiddlers of the wiki.
+
+! What it is
+
+A complete theme (plugin type //theme//). The PKM Palette plugin selects it (`$:/theme`); otherwise select it in //Control Panel → Appearance → Theme//. It builds on Vanilla, which stays loaded as a dependency (nothing is copied), and adds the author's setting values, stylesheets and overrides on top. Colours come from the palette (see the PKM Palette plugin). The layout is not provided: use any layout (Layout for instance).
+
+! What it changes
+
+|!Part |!Tiddlers |
+|Body text |`$:/themes/nikorion/pkm/styles/body-text`: foreground and background colours, Inter font, no ligatures in code |
+|Headings |`$:/themes/nikorion/pkm/styles/headings`: Palatino headings with rules, site title |
+|Rules |`$:/themes/nikorion/pkm/styles/hr`: `<hr>` with a central logo (logo shipped with the plugin) |
+|Code highlighting |`$:/themes/nikorion/pkm/styles/highlight`: Obsidian colours for highlight.js |
+|Frames |`$:/themes/nikorion/pkm/styles/layout-vanilla`: tiddler frame and sidebar borders |
+|Coloured blocks |`$:/themes/nikorion/pkm/styles/infobox`: `info0`, `interro0`, `alert0` classes |
+|Vanilla settings |font families, sizes, sidebar width, background image (shipped with the plugin), sticky titles |
+|Third-party overrides |Kookma Refnotes footnote counter, Kookma Tweaks headings (emptied), Shiraz Formatter highlight colours |
+
+! Loading order
+
+The plugin declares `plugin-priority` 100. TiddlyWiki registers the shadow tiddlers of plugins in ascending priority, the last one winning: the core has 0, ordinary plugins and themes 1, so this plugin always overrides them, whatever their alphabetical order.
+
+! Requirements
+
+* The Vanilla theme must be listed in the wiki's themes (it is, by default).
+* The [[PKM Palette|https://github.com/nikorion/TW-PKM-Palette]] plugin: the theme holds no colour, it reads the palette keys as CSS variables.
+
+* TiddlyWiki >= 5.3.5.
+* The fonts //Inter//, //Palatino Linotype// and //JetBrains Mono// are not shipped: install them on the machine or with the Font Manager plugin.

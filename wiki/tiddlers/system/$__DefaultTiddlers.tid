@@ -1,8 +1,9 @@
 created: 20261010181909292
 creator: nikorion
-modified: 20261011190500000
+modified: 20261011173458000
 modifier: nikorion
 title: $:/DefaultTiddlers
 type: text/vnd.tiddlywiki
 
-[[Edits here become the theme]] [[Playground]]
+$:/themes/nikorion/pkm
+[[Edits here become the theme]is[tiddler]] [[Playground]is[tiddler]]

@@ -7,7 +7,7 @@ metrics/fontsize: 16px
 metrics/lineheight: 25px
 metrics/sidebarwidth: 460px
 options/stickytitles: yes
-settings/backgroundimage: $:/plugins/nikorion/theme/images/vecteezy-summer-landscape-fields.svg
+settings/backgroundimage: $:/themes/nikorion/pkm/images/vecteezy-summer-landscape-fields.svg
 settings/backgroundimagesize: cover
 settings/codefontfamily: "JetBrains Mono"
 settings/editorfontfamily: "JetBrains Mono"
