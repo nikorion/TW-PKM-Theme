@@ -4,6 +4,7 @@
   "description": "Theme designed for the PKM plugin",
   "author": "nikorion",
   "version": "0.3.0",
+  "stability": "STABILITY_1_EXPERIMENTAL",
   "core-version": ">=5.3.5",
   "plugin-priority": "100",
   "list": "readme license history",
