@@ -3,7 +3,6 @@
 [English](README.md) · **Français**
 
 ![Status](https://img.shields.io/badge/status-experimental-orange)
-![Status](https://img.shields.io/badge/status-personal-orange)
 ![TiddlyWiki](https://img.shields.io/badge/TiddlyWiki-%E2%89%A55.3.5-blue)
 
 Un thème TiddlyWiki basé sur Vanilla (type de plugin theme) avec l'habillage personnel de l'auteur : feuilles de style et réglages de Vanilla, feuilles de l'auteur, et surcharges de shadow tiddlers (styles des plugins Kookma, propriétés CSS du cœur) qui étaient auparavant des tiddlers libres du wiki de production. Les couleurs viennent du plugin compagnon TW-PKM-Palette ; le layout reste celui de Layout.
@@ -18,7 +17,7 @@ Un thème TiddlyWiki basé sur Vanilla (type de plugin theme) avec l'habillage p
 
 ## Installation
 
-Plugin personnel, non publié. Reliez `src/pkm-theme` comme `nikorion/pkm-theme` dans `TIDDLYWIKI_PLUGIN_PATH` et listez `"nikorion/pkm-theme"` dans les `plugins` du `tiddlywiki.info` du wiki.
+Installez-le depuis la [bibliothèque de plugins nikorion](https://nikorion.github.io/TW-Plugin-Library/), ou depuis les sources : reliez `src/pkm-theme` comme `nikorion/pkm-theme` dans `TIDDLYWIKI_PLUGIN_PATH` et listez `"nikorion/pkm-theme"` dans les `plugins` du `tiddlywiki.info` du wiki.
 
 Nécessite TiddlyWiki ≥ 5.3.5 et les polices Inter, Palatino Linotype et JetBrains Mono sur la machine.
 
