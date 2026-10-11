@@ -17,17 +17,17 @@ border-radius: 6px;
 font-family: Verdana;
 }
 .info0{
-background: linear-gradient(#0088aa, #002255);
-color: #ccddff;
-border: outset #ccddff 1px;
+background: linear-gradient(var(--tpc-nk-info-from), var(--tpc-nk-info-to));
+color: var(--tpc-nk-info-foreground);
+border: outset var(--tpc-nk-info-foreground) 1px;
 }
 .interro0{
-background: linear-gradient(#88aa00, #225500);
-color: #ddffcd;
-border: outset #ddffcd 1px;
+background: linear-gradient(var(--tpc-nk-interro-from), var(--tpc-nk-interro-to));
+color: var(--tpc-nk-interro-foreground);
+border: outset var(--tpc-nk-interro-foreground) 1px;
 }
 .alert0{
-background: linear-gradient(#B1221C, #59110e);
-color: #ffdddd;
-border: outset #ffdddd 1px;
+background: linear-gradient(var(--tpc-nk-alert-from), var(--tpc-nk-alert-to));
+color: var(--tpc-nk-alert-foreground);
+border: outset var(--tpc-nk-alert-foreground) 1px;
 }

@@ -7,9 +7,9 @@ title: $:/nikorion/styles/layoutVanilla.css
 type: text/css
 
 :root {
-	--nk-light-background: rgba(250,250,250,0.25);
-	--nk-light-border: solid 1px rgba(0,0,0,0.05);
-	--nk-tiddler-border: double 3px rgba(0,0,0,0.2);
+	--nk-light-background: var(--tpc-nk-light-background);
+	--nk-light-border: solid 1px var(--tpc-nk-light-border);
+	--nk-tiddler-border: double 3px var(--tpc-nk-tiddler-border);
 }
 
 .tc-tiddler-frame {

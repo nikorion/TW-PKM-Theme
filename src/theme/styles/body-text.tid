@@ -7,11 +7,11 @@ type: text/css
 /* Body text: foreground / background colours, font, ligatures. */
 
 /* --logo-goat-mech is defined by hr.tid ($:/nikorion/styles/hr.css), which
-   points it at /files/logo-goat-mech.svg of the wiki. Only consumed there. */
+   inlines the logo of the plugin as a data URI. Only consumed there. */
 
 :root {
-	--nk-foreground: #1A1A1A;
-	--nk-background: #FAFAFA;
+	--nk-foreground: var(--tpc-foreground);
+	--nk-background: var(--tpc-nk-background);
 }
 
 html .tc-body {

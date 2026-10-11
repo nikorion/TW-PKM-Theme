@@ -7,13 +7,14 @@ type: text/vnd.tiddlywiki
 
 /*
 TiddlyWiki's CSS properties (transcluded by $:/core/ui/PageStylesheet).
-Override of the core tiddler: adds --tpc-<colour> for every colour of the
-Vanilla palette, used by the stylesheets of this plugin. Compare with the core
+Override of the core tiddler: emits --tpc-<key> for every key of the Vanilla
+palette AND of the current palette (so the custom keys of the Nikorion palette
+become variables), used by the stylesheets of this plugin. Compare with the core
 version when upgrading TiddlyWiki.
 */
 
 :root {
-	<$list filter="[[$:/palettes/Vanilla]indexes[]]">
+	<$list filter="[[$:/palettes/Vanilla]indexes[]] [{$:/palette}indexes[]] +[unique[]]">
 	--tpc-<<currentTiddler>>: <$transclude $variable="colour" $mode="inline" name=<<currentTiddler>>/>;
 	</$list>
 
