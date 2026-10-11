@@ -1,0 +1,44 @@
+created: 20260717013713816
+modified: 20260906220856827
+tags: $:/tags/Stylesheet
+title: $:/nikorion/styles/body-text.css
+type: text/css
+
+/* Body text: foreground / background colours, font, ligatures. */
+
+/* --logo-goat-mech is defined by hr.tid ($:/nikorion/styles/hr.css), which
+   points it at /files/logo-goat-mech.svg of the wiki. Only consumed there. */
+
+:root {
+	--nk-foreground: #1A1A1A;
+	--nk-background: #FAFAFA;
+}
+
+html .tc-body {
+	color: var(--nk-foreground);
+}
+
+.tc-tiddler-frame,
+.tc-titlebar, .tc-tiddler-title,
+.tc-tiddler-body, .tc-edit-texteditor {
+	background: var(--nk-background);
+}
+
+.tc-tab-content, .tc-tab-content div a {
+	/* Darker text in the sidebar tabs (the default colour is too pale) */
+	color: var(--nk-foreground) !important;
+}
+
+.hljs, .cm-scroller, code, pre, .tc-edit-texteditor {
+	/* No ligatures in code. Some fonts (JetBrains Mono, used here) fuse
+	   sequences such as "<!--" into a single glyph: pretty at times, but
+	   confusing, and not always clean or symmetrical for markup. */
+	font-variant-ligatures: none;
+}
+
+.tc-tiddler-frame p {
+	color: inherit;
+	font-family : "Inter";
+	font-size: 1rem;
+	line-height: 1.6;
+}

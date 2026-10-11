@@ -1,0 +1,9 @@
+title: $:/nikorion/language/fr-FR/Playground/
+
+Title: ! Terrain de jeu du thème
+Headings: Titre 1
+H2: Titre 2
+H3: Titre 3
+Body: Texte courant en Inter, avec un filet horizontal dessous (logo central si le wiki sert `/files/logo-goat-mech.svg`).
+Blocks: ! Blocs colorés
+Code: ! Coloration du code

@@ -1,0 +1,13 @@
+{
+  "title": "$:/plugins/nikorion/theme",
+  "name": "Theme",
+  "description": "nikorion's personal look: stylesheets and overrides of the Vanilla theme and of third-party plugin styles",
+  "author": "nikorion",
+  "version": "0.1.0",
+  "core-version": ">=5.3.5",
+  "plugin-priority": "100",
+  "list": "readme license history",
+  "source": "https://github.com/nikorion/TW-Theme",
+  "type": "application/json",
+  "plugin-type": "plugin"
+}

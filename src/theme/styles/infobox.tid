@@ -1,0 +1,33 @@
+created: 20210726203613953
+creator: Pr4xis
+modified: 20260621190057363
+modifier: Pr4xis
+tags: $:/tags/Stylesheet
+title: $:/nikorion/styles/infobox.css
+type: text/css
+
+/* Coloured blocks */
+.info0, .interro0, .alert0{
+font-size : 1.15em;
+line-height: 1.5;
+margin: 10px 0px; /* vertical then horizontal */
+padding: 10px 10px 20px; /* top, horizontal, bottom */
+border-radius: 6px;
+/*font-family: patrickhand;*/
+font-family: Verdana;
+}
+.info0{
+background: linear-gradient(#0088aa, #002255);
+color: #ccddff;
+border: outset #ccddff 1px;
+}
+.interro0{
+background: linear-gradient(#88aa00, #225500);
+color: #ddffcd;
+border: outset #ddffcd 1px;
+}
+.alert0{
+background: linear-gradient(#B1221C, #59110e);
+color: #ffdddd;
+border: outset #ffdddd 1px;
+}

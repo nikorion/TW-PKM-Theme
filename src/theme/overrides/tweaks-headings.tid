@@ -1,0 +1,12 @@
+code-body: yes
+created: 20260716011153611
+modified: 20260716192635593
+title: $:/plugins/kookma/tweaks/styles/headings
+type: text/vnd.tiddlywiki
+
+<!-- Deliberately left empty to stop the Kookma Tweaks plugin from styling headings.
+
+Kookma adds margins and a rule under h1, h2 and h3. That suits editorial content, but not interface or structural elements, especially nested ones (such as the tabs of the control panel), which must stay compact and sober. Tweaks therefore limited its styles to headings that are >>direct<< children of .tc-tiddler-body and .tc-tiddler-preview-preview.
+
+But it looks odd that, in editorial tabs (in user tiddlers or even in the sidebar), the rendering differs from the original tiddler. Hence the headings of this plugin: $:/nikorion/styles/headings.css
+-->

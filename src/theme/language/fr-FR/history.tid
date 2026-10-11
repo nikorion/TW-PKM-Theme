@@ -1,0 +1,4 @@
+title: $:/plugins/nikorion/theme/language/fr-FR/history
+type: text/vnd.tiddlywiki
+
+* ''0.1.0'' -- 2026.10.11 -- Bonjour ! Feuilles de style et surcharges de shadow tiddlers du wiki de production de l'auteur réunies en un plugin, chargé après le cœur et tous les autres plugins (`plugin-priority` 100).

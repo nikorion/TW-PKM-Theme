@@ -1,0 +1,106 @@
+created: 20260716104934733
+modified: 20260929183237955
+tags: $:/tags/Stylesheet
+title: $:/nikorion/styles/headings.css
+type: text/css
+
+/* Own heading styles, in place of the Kookma Tweaks ones (see
+   $:/plugins/kookma/tweaks/styles/headings, emptied by this plugin). */
+
+/* Sidebar / site title */
+.tc-site-title  {
+	font-family: "Palatino Linotype";
+	font-variant-ligatures: discretionary-ligatures;
+	font-weight: normal;
+	font-size: 3em;
+	/*text-wrap: balance;*/
+	color: #00DDFF;
+	text-shadow:-1px -1px 0   #000,
+				 1px -1px 0   #000,
+	            -1px  1px 0   #000,
+	             1px  1px 0   #000,
+	             1px  2px 6px #000;
+	text-indent: 0.1em; /* glyph overhang + text-shadow clipped by the scrollable sidebar */
+
+	&::before {
+	font-family: "Inter";
+}}
+
+/* Tiddler title */
+.tc-titlebar .tc-title {
+	font-family: "Palatino Linotype";
+	font-variant-ligatures: discretionary-ligatures;
+}
+
+/* Editor tiddler title */
+.tc-titlebar.tc-edit-texteditor { }
+
+/* Body tiddler H1 */
+h1:not(.tc-control-panel *, .tc-site-title, .tc-titlebar .tc-title, .tc-titlebar.tc-edit-texteditor) {
+	font-family: "Palatino Linotype";
+	font-variant-ligatures: discretionary-ligatures;
+	font-weight: normal;
+	font-size: 2.8rem;
+	color: inherit;
+	padding-bottom: 0.15em; /* keeps the descenders of g, p… from being clipped */
+	margin-block: 0 0.65rem;   /* instead of 0 0.8rem, compensates the added padding */
+	line-height: 1.15;
+
+	text-align: center;
+	overflow: hidden;   /* crops the rules that overflow */
+
+	&::before,
+	&::after {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		width: 50%;
+		height: 2px;
+		background: currentColor;
+		opacity: 0.8;
+		position: relative;
+	}
+	&::before {
+		margin-left: -50%;
+		right: 0.5rem;   /* gap rule ↔ text */
+	}
+	&::after {
+		margin-right: -50%;
+		left: 0.5rem;
+	}
+}
+
+/* Body tiddler H2 */
+h2:not(.tc-control-panel *, .tc-site-title, .tc-titlebar .tc-title, .tc-titlebar.tc-edit-texteditor) {
+	font-family: "Palatino Linotype";
+	color: inherit;
+	padding-bottom: 0.12em;         /* keeps the descenders of g, p… from being clipped */
+	margin-block: 0.8rem 0.23rem;   /* instead of 0.8rem 0.35rem, compensates the padding */
+	line-height: 1.2;
+	font-size: 1.8rem;
+	font-weight: normal;
+	overflow: hidden;
+
+	&::after {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		height: 1px;
+		width: 100%;
+		margin-right: -100%;   /* cancels the width → stays on the text line */
+		margin-left: 0.75rem;  /* gap text ↔ rule */
+		background: currentColor;
+		opacity: 0.8;
+	}
+}
+
+/* Body tiddler H3 */
+h3:not(.tc-control-panel *, .tc-site-title, .tc-titlebar .tc-title, .tc-titlebar.tc-edit-texteditor) {
+	/*text-wrap: balance;*/
+	font-family : "Inter";
+	color: inherit;
+	margin-block: 0.8rem 0.3rem; /* vertical margins */
+	line-height: 1.25;
+	font-size: 1.2rem;
+	font-weight:bold;
+}

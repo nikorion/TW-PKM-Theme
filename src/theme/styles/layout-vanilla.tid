@@ -1,0 +1,27 @@
+created: 20260602102228011
+creator: nikorion
+modified: 20260825110929097
+modifier: nikorion
+tags: $:/tags/Stylesheet
+title: $:/nikorion/styles/layoutVanilla.css
+type: text/css
+
+:root {
+	--nk-light-background: rgba(250,250,250,0.25);
+	--nk-light-border: solid 1px rgba(0,0,0,0.05);
+	--nk-tiddler-border: double 3px rgba(0,0,0,0.2);
+}
+
+.tc-tiddler-frame {
+	border: var(--nk-tiddler-border);
+}
+
+.tc-edit-tags {
+	/* Clearer edit view */
+	border: none !important;
+}
+
+.tc-sidebar-scrollable {
+	background: var(--nk-light-background);
+	border: var(--nk-light-border);
+}

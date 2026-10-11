@@ -1,0 +1,73 @@
+created: 20260718050121463
+modified: 20260822112448024
+tags: $:/tags/Stylesheet
+title: $:/nikorion/styles/hr.css
+type: text/css
+
+:root {
+	--nk-foreground: var(--tpc-foreground)/*#1A1A1A*/;
+}
+
+/* Goat icon: the SVG is the file files/logo-goat-mech.svg of the wiki (served
+   at /files/ by the TW server). Pure text/css, no wikitext. Editing the icon
+   means editing that file; the plugin does not ship it. */
+:root {
+	--logo-goat-mech: url("/files/logo-goat-mech.svg");
+}
+
+
+/* Variant for multicolour SVGs whose hard-coded colours must be kept: */
+
+/*
+.tc-tiddler-frame hr {
+	opacity:1;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	width: 60%;
+	height: 40px;
+	margin: 0.75rem auto;
+	border: 0;
+	color: var(--nk-foreground);
+	background-image: var(--logo-goat-mech);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 32px 32px;
+
+	&::before, &::after {
+		content: "";
+		flex: 1;
+		height: 1px;
+	}
+	&::before {
+		background: linear-gradient(to right, transparent, currentColor);
+	}
+	&::after {
+		background: linear-gradient(to left, transparent, currentColor);
+	}
+}
+*/
+
+/* Monochrome SVG (follows the wiki theme): */
+
+.tc-tiddler-frame hr {
+	--logo-size: 26px;   /* size of the central logo */
+	--logo-gap: 8px;     /* breathing room between rule and logo */
+	opacity: 1;
+	position: relative;
+	width: 100%;
+	height: var(--logo-size);
+	margin: 0.45rem auto;
+	border: 0;
+	background: linear-gradient(to right, var(--nk-foreground), var(--nk-foreground))
+			left  center / calc(50% - var(--logo-size) / 2 - var(--logo-gap)) 1px no-repeat,
+		linear-gradient(to left,  var(--nk-foreground), var(--nk-foreground))
+			right center / calc(50% - var(--logo-size) / 2 - var(--logo-gap)) 1px no-repeat;
+}
+.tc-tiddler-frame hr::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-color: var(--nk-foreground);
+	mask: var(--logo-goat-mech) center / var(--logo-size) var(--logo-size) no-repeat;
+}

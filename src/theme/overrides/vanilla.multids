@@ -1,0 +1,14 @@
+title: $:/themes/tiddlywiki/vanilla/
+type: text/vnd.tiddlywiki
+
+metrics/bodyfontsize: 16px
+metrics/bodylineheight: 25px
+metrics/fontsize: 16px
+metrics/lineheight: 25px
+metrics/sidebarwidth: 460px
+options/stickytitles: yes
+settings/backgroundimage: vecteezy-summer-landscape-fields.svg
+settings/backgroundimagesize: cover
+settings/codefontfamily: "JetBrains Mono"
+settings/editorfontfamily: "JetBrains Mono"
+settings/fontfamily: "Inter"

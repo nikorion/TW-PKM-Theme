@@ -1,0 +1,25 @@
+created: 20181214085707714
+creator: Pr4xis
+list-after:
+modified: 20260625224724987
+modifier: Pr4xis
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/refnotes/styles/footnote-counter
+type: text/css
+
+/* Override of the Kookma Refnotes stylesheet.
+   Automatic counter for the fnote macro; it resets at the beginning of each tiddler. */
+.tc-tiddler-frame {
+  counter-reset: fnote-count katexEqnNo;
+}
+.refnotes-footnote {
+  counter-increment: fnote-count;
+}
+.refnotes-footnote:after {
+  content: counter(fnote-count);
+  font-size:small;
+ /* color:#0000ee;*/
+  vertical-align: super;
+  line-height: 1.5;
+  color:#0000ee;
+}

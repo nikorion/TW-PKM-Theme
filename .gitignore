@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Build TiddlyWiki
+dist/
+
+# Session state (not meaningful content)
+wiki/tiddlers/$__StoryList*
+wiki/tiddlers/$__HistoryList*
+wiki/tiddlers/$__Import.tid
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Notes Claude locales (perso, non versionnées)
+CLAUDE.local.md
+
+# Demo wiki, built and published by CI (never committed)
+docs/

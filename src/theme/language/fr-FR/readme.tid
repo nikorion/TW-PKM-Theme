@@ -1,0 +1,26 @@
+title: $:/plugins/nikorion/theme/language/fr-FR/readme
+type: text/vnd.tiddlywiki
+
+Un habillage personnel pour TiddlyWiki : les feuilles de style de l'auteur et les surcharges de shadow tiddlers tiers (réglages du thème Vanilla, plugins Kookma, propriétés CSS du cœur), réunies dans un seul plugin plutôt qu'éparpillées en tiddlers libres du wiki.
+
+! Ce qu'il change
+
+|!Partie |!Tiddlers |
+|Texte courant |`$:/nikorion/styles/body-text.css` : couleurs de texte et de fond, police Inter, pas de ligatures dans le code |
+|Titres |`$:/nikorion/styles/headings.css` : titres en Palatino avec filets, titre du site |
+|Filets |`$:/nikorion/styles/hr.css` : `<hr>` avec un logo central (lit `/files/logo-goat-mech.svg` du wiki) |
+|Coloration du code |`$:/nikorion/styles/highlight.css` : couleurs Obsidian pour highlight.js |
+|Cadres |`$:/nikorion/styles/layoutVanilla.css` : bordures des tiddlers et de la barre latérale |
+|Blocs colorés |`$:/nikorion/styles/infobox.css` : classes `info0`, `interro0`, `alert0` |
+|Réglages Vanilla |polices, tailles, largeur de la barre latérale, image de fond, titres collants |
+|Surcharges tierces |compteur de notes de Kookma Refnotes, titres de Kookma Tweaks (vidés), couleurs de surlignage de Shiraz Formatter, `custom-properties` du cœur |
+
+! Ordre de chargement
+
+Le plugin déclare `plugin-priority` 100. TiddlyWiki enregistre les shadow tiddlers des plugins par priorité croissante, le dernier l'emportant : le cœur a 0, les plugins et thèmes ordinaires 1, donc ce plugin les surcharge toujours, quel que soit leur ordre alphabétique.
+
+! Prérequis
+
+* TiddlyWiki >= 5.3.5.
+* Les polices //Inter//, //Palatino Linotype// et //JetBrains Mono// ne sont pas fournies : installez-les sur la machine ou avec le plugin Font Manager.
+* Le filet horizontal a besoin du fichier `files/logo-goat-mech.svg` dans le dossier du wiki (servi sous `/files/`).

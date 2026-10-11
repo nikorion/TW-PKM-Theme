@@ -1,0 +1,26 @@
+title: $:/plugins/nikorion/theme/language/en-GB/readme
+type: text/vnd.tiddlywiki
+
+A personal look for a TiddlyWiki: the author's stylesheets and the overrides of third-party shadow tiddlers (Vanilla theme settings, Kookma plugins, core custom properties), gathered in one plugin instead of being scattered as loose tiddlers of the wiki.
+
+! What it changes
+
+|!Part |!Tiddlers |
+|Body text |`$:/nikorion/styles/body-text.css`: foreground and background colours, Inter font, no ligatures in code |
+|Headings |`$:/nikorion/styles/headings.css`: Palatino headings with rules, site title |
+|Rules |`$:/nikorion/styles/hr.css`: `<hr>` with a central logo (reads `/files/logo-goat-mech.svg` of the wiki) |
+|Code highlighting |`$:/nikorion/styles/highlight.css`: Obsidian colours for highlight.js |
+|Frames |`$:/nikorion/styles/layoutVanilla.css`: tiddler frame and sidebar borders |
+|Coloured blocks |`$:/nikorion/styles/infobox.css`: `info0`, `interro0`, `alert0` classes |
+|Vanilla settings |font families, sizes, sidebar width, background image, sticky titles |
+|Third-party overrides |Kookma Refnotes footnote counter, Kookma Tweaks headings (emptied), Shiraz Formatter highlight colours, core `custom-properties` |
+
+! Loading order
+
+The plugin declares `plugin-priority` 100. TiddlyWiki registers the shadow tiddlers of plugins in ascending priority, the last one winning: the core has 0, ordinary plugins and themes 1, so this plugin always overrides them, whatever their alphabetical order.
+
+! Requirements
+
+* TiddlyWiki >= 5.3.5.
+* The fonts //Inter//, //Palatino Linotype// and //JetBrains Mono// are not shipped: install them on the machine or with the Font Manager plugin.
+* The horizontal rule needs the file `files/logo-goat-mech.svg` in the wiki folder (served at `/files/`).
