@@ -13,7 +13,6 @@
         "nikorion/detect-language"
     ],
     "themes": [
-        "tiddlywiki/snowwhite",
         "tiddlywiki/vanilla"
     ],
     "languages": [
