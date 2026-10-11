@@ -13,7 +13,7 @@ type: text/vnd.tiddlywiki
 /* Goat icon: the SVG is a tiddler of this plugin, inlined as a data URI
    (no file served by the wiki, works the same in a single-file wiki). */
 :root {
-	--logo-goat-mech: url(<<datauri "$:/plugins/nikorion/theme/images/logo-goat-mech.svg">>);
+	--logo-goat-mech: url("<<datauri "$:/plugins/nikorion/theme/images/logo-goat-mech.svg">>");
 }
 
 
