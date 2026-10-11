@@ -12,12 +12,11 @@ Plugin TiddlyWiki (`$:/plugins/nikorion/theme`, créé 2026-10-11) : le visuel p
 - Aucun JS, pas de `pnpm lint`.
 - **Exception à la convention des wikis de dev (choix utilisateur 2026-10-11)** : `wiki/tiddlers/system/` ne contient **ni palette, ni `AnimationDuration`, ni `$:/view`, ni réglage Vanilla** (metrics/options/settings) — tout le visuel vient de `src/theme/`, le wiki de dev charge son propre plugin. Ne pas y recréer ces tiddlers ni les y copier : `TW-Theme` est dans `exclude` de `tw-dev/prefs.json` (la synchro des préférences d'interface ne lui en donne ni n'en prend). Un réglage visuel à changer se fait dans `src/theme/overrides/vanilla.multids`.
 - **`$:/config/SyncFilter` du wiki de dev étendu** : en plus de `$:/plugins/nikorion/`, il exclut tout ce que le plugin porte sous un autre titre (`$:/nikorion/styles/`, `custom-properties`, `$:/plugins/kookma/`, `$:/themes/tiddlywiki/vanilla/`) + `$:/palette`, `$:/view`, `AnimationDuration`. Sans ça le HMR pousse la feuille au navigateur, dont le syncer la réécrit dans `wiki/tiddlers/system/` (vécu 2026-10-11, `$__nikorion_styles_hr.css.tid`), et ce vrai tiddler masque le shadow du plugin pour de bon. Tout nouveau titre ajouté au plugin hors `$:/plugins/nikorion/theme/` → l'ajouter à ce filtre.
-- Le fond (`settings/backgroundimage` = `vecteezy-summer-landscape-fields.svg`, 1,3 Mo) reste un tiddler de kms-prod, non livré dans le plugin.
+- Le fond d'écran (`images/vecteezy-summer-landscape-fields.svg`, 1,3 Mo) est livré dans le plugin ; Vanilla l'inline en data URI dans la feuille de page (base.tid), ce qui alourdit le CSS de chaque page. Alternative si gênant : le servir par `_canonical_uri` (retour à un fichier externe).
 
 ## Dépendances hors plugin
 - Aucun fichier externe : le logo du filet est le tiddler `images/logo-goat-mech.svg` du plugin, inliné en data URI par `hr.tid` (macro `datauri` ; feuille wikitext donc `ules only …`).
 - Polices Inter, Palatino Linotype, JetBrains Mono : installées sur la machine (ou Font Manager).
-- `settings/backgroundimage` désigne un tiddler du wiki (`vecteezy-summer-landscape-fields.svg`).
 
 ## Structure
 ```

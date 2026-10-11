@@ -35,7 +35,7 @@ Sources are in `src/theme/`; the dev wiki (`wiki/`) shows every part in its Play
 |---|---|
 | `src/theme/plugin.info` | Plugin metadata, `plugin-priority` |
 | `src/theme/styles/*.tid` | Stylesheets tagged `$:/tags/Stylesheet` |
-| `src/theme/images/` | Logo used by the horizontal rule (inlined as a data URI) |
+| `src/theme/images/` | Logo of the horizontal rule and wallpaper (inlined as data URIs, no served file) |
 | `src/theme/overrides/*` | Shadow-tiddler overrides (title imposed by the overridden tiddler) |
 
 ## License

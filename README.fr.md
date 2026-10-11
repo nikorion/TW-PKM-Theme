@@ -35,7 +35,7 @@ Les sources sont dans `src/theme/` ; le wiki de dev (`wiki/`) montre chaque part
 |---|---|
 | `src/theme/plugin.info` | Métadonnées du plugin, `plugin-priority` |
 | `src/theme/styles/*.tid` | Feuilles de style taguées `$:/tags/Stylesheet` |
-| `src/theme/images/` | Logo du filet horizontal (inliné en data URI) |
+| `src/theme/images/` | Logo du filet horizontal et fond d'écran (inlinés en data URI, aucun fichier servi) |
 | `src/theme/overrides/*` | Surcharges de shadow tiddlers (titre imposé par le tiddler surchargé) |
 
 ## Licence

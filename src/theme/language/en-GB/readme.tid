@@ -12,7 +12,7 @@ A personal look for a TiddlyWiki: the author's stylesheets and the overrides of 
 |Code highlighting |`$:/nikorion/styles/highlight.css`: Obsidian colours for highlight.js |
 |Frames |`$:/nikorion/styles/layoutVanilla.css`: tiddler frame and sidebar borders |
 |Coloured blocks |`$:/nikorion/styles/infobox.css`: `info0`, `interro0`, `alert0` classes |
-|Vanilla settings |font families, sizes, sidebar width, background image, sticky titles |
+|Vanilla settings |font families, sizes, sidebar width, background image (shipped with the plugin), sticky titles |
 |Third-party overrides |Kookma Refnotes footnote counter, Kookma Tweaks headings (emptied), Shiraz Formatter highlight colours, core `custom-properties` |
 
 ! Loading order
