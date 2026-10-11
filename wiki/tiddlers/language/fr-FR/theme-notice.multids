@@ -1,4 +1,4 @@
-title: $:/nikorion/language/fr-FR/SourceOnly/
+title: $:/nikorion/language/fr-FR/ThemeNotice/
 
 Title: ! Tout ce que vous modifiez ou créez ici devient le thème
 Rule: ''Dans ce wiki de dev, tout ce que vous créez ou modifiez depuis l'interface web fait partie du plugin.'' C'est écrit dans `src/theme/` et supprimé de `wiki/tiddlers/` : vous construisez le thème directement dans le navigateur.

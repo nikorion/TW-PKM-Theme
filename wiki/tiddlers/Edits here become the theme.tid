@@ -1,0 +1,16 @@
+created: 20261011190500000
+creator: nikorion
+modified: 20261011213000000
+modifier: nikorion
+title: Edits here become the theme
+type: text/vnd.tiddlywiki
+
+<<detect-language-lingo "ThemeNotice/Title" mode="block">>
+
+<<detect-language-lingo "ThemeNotice/Rule" mode="block">>
+
+<<detect-language-lingo "ThemeNotice/Why" mode="block">>
+
+<<detect-language-lingo "ThemeNotice/Where" mode="block">>
+
+<<detect-language-lingo "ThemeNotice/Manual" mode="block">>
