@@ -5,4 +5,4 @@ modifier: nikorion
 title: $:/config/SyncFilter
 type: text/vnd.tiddlywiki
 
-[is[tiddler]] -[[$:/core]] -[[$:/library/sjcl.js]] -[prefix[$:/boot/]] -[prefix[$:/HistoryList]] -[prefix[$:/StoryList]] -[[$:/language]] -[prefix[$:/nikorion/language/]] -[status[pending]plugin-type[import]] -[[$:/Import]] -[[$:/isEncrypted]] -[prefix[$:/status/]] -[prefix[$:/state/]] -[prefix[$:/temp/]] -[prefix[$:/plugins/nikorion/]] -[prefix[$:/nikorion/styles/]] -[[$:/core/stylesheets/custom-properties]] -[prefix[$:/plugins/kookma/]] -[prefix[$:/themes/tiddlywiki/vanilla/]] -[[$:/palette]] -[[$:/view]] -[[$:/config/AnimationDuration]]
+[is[tiddler]] -[[$:/core]] -[[$:/library/sjcl.js]] -[prefix[$:/boot/]] -[prefix[$:/HistoryList]] -[prefix[$:/StoryList]] -[[$:/language]] -[prefix[$:/nikorion/language/]] -[status[pending]plugin-type[import]] -[[$:/Import]] -[[$:/isEncrypted]] -[prefix[$:/status/]] -[prefix[$:/state/]] -[prefix[$:/temp/]] -[prefix[$:/plugins/nikorion/]] -[[$:/palette]] -[[$:/view]] -[[$:/config/AnimationDuration]]

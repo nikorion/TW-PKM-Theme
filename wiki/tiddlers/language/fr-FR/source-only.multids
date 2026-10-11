@@ -1,6 +1,6 @@
 title: $:/nikorion/language/fr-FR/SourceOnly/
 
-Title: ! Modifier le thème uniquement depuis sa source
-Rule: ''Ne changez jamais le visuel depuis l'interface web'' (réglages du thème, choix de palette, édition d'une feuille de style ou d'un tiddler de réglage ici) : modifiez plutôt les fichiers du plugin.
-Why: Tout le visuel vit dans les sources du plugin sous forme de shadow tiddlers. Une modification faite dans le navigateur crée un tiddler ordinaire qui masque le shadow du plugin : il ne fait pas partie du plugin, il est filtré des sauvegardes sur disque (`$:/config/SyncFilter`) et il est perdu ou devient une divergence cachée.
-Where: Feuilles de style : `src/theme/styles/` · surcharges du cœur, de Vanilla et des plugins tiers : `src/theme/overrides/` (réglages Vanilla dans `vanilla.multids`) · images : `src/theme/images/`. Avec `pnpm dev`, enregistrer un fichier l'applique à chaud.
+Title: ! Les modifications faites dans le navigateur vont dans la source
+Rule: ''Vous pouvez modifier le visuel depuis l'interface web de ce wiki de dev'' (réglages du thème, une feuille de style ou un tiddler de réglage du plugin) : la modification est réécrite dans les sources du plugin et le fichier est supprimé de `wiki/tiddlers/`.
+Why: Avec `pnpm dev`, le serveur de dev repère le fichier que le navigateur vient d'enregistrer, retrouve le tiddler par son titre dans `src/theme/` (un fichier `.tid`, ou une ligne de `overrides/vanilla.multids`), le met à jour, puis supprime la copie enregistrée pour que le shadow tiddler du plugin reprenne la main. Rien ne reste dans le wiki.
+Where: Réécrits : feuilles de style (`src/theme/styles/`), surcharges (`src/theme/overrides/`), réglages Vanilla (un nouveau est ajouté à `vanilla.multids`). Laissés tels quels : les tiddlers inconnus du plugin, les valeurs sur plusieurs lignes pour `vanilla.multids`, et `$:/palette`, `$:/view`, `AnimationDuration` (jamais enregistrés dans ce wiki).

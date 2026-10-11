@@ -2,7 +2,7 @@ created: 20261011190500000
 creator: nikorion
 modified: 20261011190500000
 modifier: nikorion
-title: Edit from the source
+title: Browser edits go to the source
 type: text/vnd.tiddlywiki
 
 <<detect-language-lingo "SourceOnly/Title" mode="block">>
