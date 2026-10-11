@@ -14,12 +14,6 @@
     "tiddlywiki": "^5.4.1"
   },
   "twDev": {
-    "writeBack": {
-      "dirs": [
-        "src/theme",
-        "../TW-Palette/src/palette"
-      ],
-      "default": "src/theme"
-    }
+    "writeBack": "src/theme"
   }
 }

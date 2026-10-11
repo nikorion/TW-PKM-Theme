@@ -4,7 +4,6 @@
         "tiddlywiki/filesystem",
         "tiddlywiki/tiddlyweb",
         "nikorion/theme",
-        "nikorion/palette",
         "tiddlywiki/highlight",
         "tiddlywiki/katex",
         "nikorion/plugin-info-tree",

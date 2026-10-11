@@ -5,7 +5,7 @@ Un thème TiddlyWiki basé sur Vanilla, avec un habillage personnel : les feuill
 
 ! Ce que c'est
 
-Un thème complet (type de plugin //theme//). Le plugin Palette le sélectionne (`$:/theme`) ; sinon sélectionnez-le dans //Panneau de contrôle → Apparence → Thème//. Il s'appuie sur Vanilla, qui reste chargé comme dépendance (rien n'est copié), et y ajoute par-dessus les valeurs de réglages, les feuilles et les surcharges de l'auteur. Les couleurs viennent de la palette (voir le plugin Palette). Le layout n'est pas fourni : utilisez n'importe quel layout (Layout par exemple).
+Un thème complet (type de plugin //theme//). Sélectionnez-le dans //Panneau de contrôle → Apparence → Thème//, ou réglez `$:/theme` sur `$:/plugins/nikorion/theme`. Il s'appuie sur Vanilla, qui reste chargé comme dépendance (rien n'est copié), et y ajoute par-dessus les valeurs de réglages, les feuilles et les surcharges de l'auteur. Les couleurs viennent de la palette qu'il livre (`$:/palettes/nikorion`, copie de la palette par défaut à ajuster), sélectionnée par `$:/palette`. Le layout n'est pas fourni : utilisez n'importe quel layout (Layout par exemple).
 
 ! Ce qu'il change
 
@@ -26,7 +26,6 @@ Le plugin déclare `plugin-priority` 100. TiddlyWiki enregistre les shadow tiddl
 ! Prérequis
 
 * Le thème Vanilla doit figurer dans les thèmes du wiki (c'est le cas par défaut).
-* Le plugin [[Palette|https://github.com/nikorion/TW-Palette]] : le thème ne contient aucune couleur, il lit les clés de la palette comme variables CSS.
 
 * TiddlyWiki >= 5.3.5.
 * Les polices //Inter//, //Palatino Linotype// et //JetBrains Mono// ne sont pas fournies : installez-les sur la machine ou avec le plugin Font Manager.
