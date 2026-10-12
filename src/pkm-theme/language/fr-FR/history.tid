@@ -1,5 +1,5 @@
 title: $:/themes/nikorion/pkm/language/fr-FR/history
 type: text/vnd.tiddlywiki
 
-* ''0.2.0'' -- 2026.10.11 -- Désormais un thème complet basé sur Vanilla (type de plugin theme), à sélectionner par `$:/theme` ; la palette passe dans le plugin TW-PKM-Palette.
-* ''0.1.0'' -- 2026.10.11 -- Bonjour ! Feuilles de style et surcharges de shadow tiddlers du wiki de production de l'auteur réunies en un plugin, chargé après le cœur et tous les autres plugins (`plugin-priority` 100).
+* ''0.2.0'' (2026-10-11) -- Désormais un thème complet basé sur Vanilla (type de plugin theme), à sélectionner par `$:/theme` ; la palette passe dans le plugin TW-PKM-Palette.
+* ''0.1.0'' (2026-10-11) -- Bonjour ! Feuilles de style et surcharges de shadow tiddlers du wiki de production de l'auteur réunies en un plugin, chargé après le cœur et tous les autres plugins (`plugin-priority` 100).
